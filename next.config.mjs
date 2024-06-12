@@ -1,5 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    serverActions: true,
+  },
+  images: {
+    domains: [
+      'www.google.com',
+      'www.simplilearn.com',
+      'objectstorage.ap-tokyo-1.oraclecloud.com',
+      'storage.googleapis.com',
+    ],
+  },
   async headers() {
     return [
         {
